@@ -16,6 +16,15 @@ Para instalar no Laravel:
 * php artisan serve
 
 
+Comandos para API
+
+/transacoes (Mostrar todas)
+/transacoes/ID 
+/transacoes (POST -> Gravar\Storage)
+/transacoes/id (DELETE)
+
+
+
 
 
 
