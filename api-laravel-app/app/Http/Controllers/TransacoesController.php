@@ -22,7 +22,7 @@ class TransacoesController extends Controller
         //Resultado da transação;
     }
 
-    public function show(Transacoes $article)
+    public function show(Transacoes $transacao)
     {
         //Mostrar
         //id da transação
@@ -34,26 +34,26 @@ class TransacoesController extends Controller
         //Duração da transação;
         //Resultado da transação;
 
-        return $article;
+        return $transacao;
     }
 
     public function store(Request $request)
     {
-        $article = Transacoes::create($request->all());
+        $transacao = Transacoes::create($request->all());
 
-        return response()->json($article, 201);
+        return response()->json($transacao, 201);
     }
 
-    public function update(Request $request, Transacoes $article)
+    public function update(Request $request, Transacoes $transacao)
     {
-        $article->update($request->all());
+        $transacao->update($request->all());
 
-        return response()->json($article, 200);
+        return response()->json($transacao, 200);
     }
 
-    public function delete(Transacoes $article)
+    public function delete(Transacoes $transacao)
     {
-        $article->delete();
+        $transacao->delete();
 
         return response()->json(null, 204);
     }
